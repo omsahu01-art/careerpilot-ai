@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import CareerAssistant from "./components/CareerAssistant";
+
 import Landing from "./pages/Landing";
 import Upload from "./pages/Upload";
 import Parsing from "./pages/Parsing";
@@ -30,6 +32,8 @@ export default function App() {
         <Route path="/track" element={<Track />} />
         <Route path="/demo" element={<Demo />} />
       </Routes>
+
+      <CareerAssistant />
     </BrowserRouter>
   );
 }
